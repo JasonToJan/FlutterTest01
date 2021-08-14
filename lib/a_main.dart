@@ -7,6 +7,7 @@ import 'bc_constrainedbox_widget.dart';
 import 'bd_fittedbox_widget.dart';
 import 'be_fractionally_sized_box.dart';
 import 'bf_baseline.dart';
+import 'bg_text_imageicon.dart';
 
 void main() {
   runApp(MyApp());
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/FittedBox': (context) => FittedBoxWidget(),
         '/FractionallySizedBox': (context) => FractionallySizedBoxWidget(),
         '/Baseline': (context) => BaselineWidget(),
+        '/TextImageIcon': (context) => TextImageIconWidget(),
       },
       home: MyHomePage(title: 'Flutter组件详解'),
     );
