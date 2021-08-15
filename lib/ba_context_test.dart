@@ -11,7 +11,7 @@ class ContextTest extends StatelessWidget {
         children: <Widget>[
           Builder(builder: (context) {
             // 通过context上下文，往上查找最近的widget
-            Scaffold? scaffold = context.findAncestorWidgetOfExactType<Scaffold>();
+            Scaffold scaffold = context.findAncestorWidgetOfExactType<Scaffold>();
             return Center(child: (scaffold?.appBar as AppBar).title);
           }),
         ],
