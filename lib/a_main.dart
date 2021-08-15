@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:test2/bj_wrap.dart';
 import 'package:test2/bk_stack.dart';
 import 'package:test2/bl_row_column.dart';
+import 'package:test2/bv_text_field_keyboard_fix.dart';
+import 'package:test2/bw_tabbar.dart';
+import 'package:test2/bx_complex_tabbar.dart';
 
 import 'b_home_page.dart';
 import 'ba_context_test.dart';
@@ -20,6 +23,8 @@ import 'bp_custom_scroll_view.dart';
 import 'bq_gridview.dart';
 import 'br_inherited_widget.dart';
 import 'bs_alert_dialog.dart';
+import 'bt_bottom_sheet.dart';
+import 'bu_text_field.dart';
 
 void main() {
   runApp(MyApp());
@@ -54,6 +59,11 @@ class MyApp extends StatelessWidget {
         '/GridView': (context) => GridViewWidget(),
         '/InheritedWidget': (context) => MyTree(),
         '/AlertDialogWidget': (context) => AlertDialogWidget(),
+        '/BottomSheetWidget': (context) => BottomSheetWidget(),
+        '/TextField': (context) => TextFieldWidget(),
+        '/TextFieldKeyboardFix': (context) => TextFieldKeyboardFix(),
+        '/TabBar': (context) => TabBarWidget(),
+        '/ComplexTabBarView': (context) => ComplexTabBarViewWidget(),
       },
       home: MyHomePage(title: 'Flutter组件详解'),
     );
